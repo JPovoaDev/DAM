@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Football Scout Primary Colors -->
+    <color name="md_theme_primary">#006C4C</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_secondary">#4D6357</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+    <color name="md_theme_background">#FBFDF9</color>
+    <color name="md_theme_surface">#FBFDF9</color>
+    
+    <!-- Additional Colors for UI Elements -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#191C1A</color>
+    <color name="text_secondary">#404943</color>
+    <color name="divider">#E1E3DF</color>
+</resources>

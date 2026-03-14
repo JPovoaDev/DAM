@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/playerSearchFragment">
+
+    <fragment
+        android:id="@+id/playerSearchFragment"
+        android:name="com.example.footballscout.ui.activities.PlayerSearchFragment"
+        android:label="@string/title_players"
+        tools:layout="@layout/fragment_player_search">
+        <action
+            android:id="@+id/action_playerSearchFragment_to_playerDetailFragment"
+            app:destination="@id/playerDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/teamSearchFragment"
+        android:name="com.example.footballscout.ui.activities.TeamSearchFragment"
+        android:label="@string/title_teams"
+        tools:layout="@layout/fragment_team_search">
+        <action
+            android:id="@+id/action_teamSearchFragment_to_teamDetailFragment"
+            app:destination="@id/teamDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.footballscout.ui.activities.FavoritesFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorites">
+        <action
+            android:id="@+id/action_favoritesFragment_to_playerDetailFragment"
+            app:destination="@id/playerDetailFragment" />
+        <action
+            android:id="@+id/action_favoritesFragment_to_teamDetailFragment"
+            app:destination="@id/teamDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/playerDetailFragment"
+        android:name="com.example.footballscout.ui.activities.PlayerDetailFragment"
+        android:label="Player Details"
+        tools:layout="@layout/fragment_player_detail">
+        <argument
+            android:name="playerId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/teamDetailFragment"
+        android:name="com.example.footballscout.ui.activities.TeamDetailFragment"
+        android:label="Team Details"
+        tools:layout="@layout/fragment_team_detail">
+        <argument
+            android:name="teamId"
+            app:argType="string" />
+    </fragment>
+</navigation>
