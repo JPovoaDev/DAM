@@ -3,7 +3,7 @@
 Disciplina: Desenvolvimento de Aplicação Moveis
 Aluno :João Pedro Mulano Póvoa
 Data: 08/03/2026
-URL do Repositório: https://github.com/JPovoaDev/DAM_TP1_Ex8
+URL do Repositório: https://github.com/JPovoaDev/DAM/tree/main/TP1/DAM_TP1_Ex8
 
 ## 1. Introdução
 A aplicação Football Scout foi desenvolvida com o intuito de centralizar informações relativas ao mundo do futebol. Frequentemente, os utilizadores necessitam de aceder a múltiplas plataformas para consultar o histórico de um jogador, os próximos encontros de uma equipa ou as classificações das ligas. O objetivo deste projeto passa por agregar estes dados numa aplicação Android intuitiva, possibilitando a pesquisa de jogadores e equipas, bem como a gestão de favoritos.
