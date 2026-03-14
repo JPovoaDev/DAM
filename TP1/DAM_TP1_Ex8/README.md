@@ -1,8 +1,11 @@
 # Trabalho Ex8 — Football Scout
 
 Disciplina: Desenvolvimento de Aplicação Moveis
+
 Aluno :João Pedro Mulano Póvoa
+
 Data: 08/03/2026
+
 URL do Repositório: https://github.com/JPovoaDev/DAM/tree/main/TP1/DAM_TP1_Ex8
 
 ## 1. Introdução
