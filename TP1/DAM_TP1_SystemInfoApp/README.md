@@ -1,11 +1,12 @@
-# Assignment X — System Info App
+# Trabalho Ex5 — System Info App
+
 Course: Desenvolvimento de Aplicações Móveis (DAM)
 
 Student: João Pedro Mulano Póvoa
 
 Date: 07/03/2026
 
-Repository URL: https://github.com/JPovoaDev/DAM_TP1_System_Info_App
+Repository URL: https://github.com/JPovoaDev/DAM/tree/main/TP1/DAM_TP1_SystemInfoApp
 
 ## 1. Introduction
 Este projeto, chamado **System Info App**, foi desenvolvido como um exercício para a cadeira. O objetivo principal era criar uma aplicação Android que conseguisse ir buscar as informações do sistema e do dispositivo atual, mostrando tudo de forma clara num `TextView` multilinha (MultiLine TextView).
