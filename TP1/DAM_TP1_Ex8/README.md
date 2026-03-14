@@ -1,4 +1,4 @@
-# Trabalho X — Football Scout
+# Trabalho Ex8 — Football Scout
 
 Disciplina: Desenvolvimento de Aplicação Moveis
 Aluno :João Pedro Mulano Póvoa
