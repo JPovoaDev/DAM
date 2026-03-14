@@ -6,7 +6,7 @@ Student(s): João Pedro Mulano Povoa
 
 Date: 07/03/2026
 
-Repository URL: https://github.com/JPovoaDev/DAM_TP1_Ex2_Ex6
+Repository URL: https://github.com/JPovoaDev/DAM/tree/main/TP1/DAM_TP1_ExKotlin
 
 ## 1. Introduction
 Este projeto foi desenvolvido no âmbito da disciplina de Desenvolvimento de Aplicações Móveis (DAM) e tem como principal objetivo a resolução de uma série de 4 exercícios práticos para consolidação dos conceitos base da linguagem Kotlin. 
