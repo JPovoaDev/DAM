@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hello World V2</string>
+    <string name="hello_string">Hello Android World!</string>
+    <string name="just_smile">Just Smile</string>
+    <string name="my_first_app">My First App</string>
+    <string name="activity_oncreate_msg">\"Activity %1$s onCreate\"</string>
+    <string name="write_your_taks">Write Your Taks!</string>
+    <string name="your_to_do">Your To Do</string>
+    <string name="to_add_task">To add task</string>
+    <string name="your_remainig_taks">Your remainig taks:</string>
+</resources>
