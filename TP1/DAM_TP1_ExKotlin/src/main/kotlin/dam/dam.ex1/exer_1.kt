@@ -8,7 +8,6 @@ fun main(args: Array<String>) {
     // porem o 0 não é um quadrado perfeito, o primeiro quadrado perfeito é o 1 que é 1*1, que diz respeito a seguna iteracao
     // do array logo fazemos (i+1)*(i+1).
     val arrayA = IntArray(50){i -> (i+1)*(i+1)}
-
     //for (i in 1..arrayA.size){
 
     //    arrayA[i-1] = i*i
