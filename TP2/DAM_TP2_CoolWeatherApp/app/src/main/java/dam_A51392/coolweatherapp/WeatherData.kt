@@ -5,9 +5,13 @@ data class WeatherData(
     var longitude: String,
     var timezone: String,
     var current_weather: CurrentWeather,
-    var hourly: Hourly
+    var hourly: Hourly,
+    var daily: Daily
 )
-
+data class Daily(
+    var sunrise: ArrayList<String>,
+    var sunset: ArrayList<String>
+)
 data class CurrentWeather(
     var temperature: Float,
     var windspeed: Float,
@@ -30,9 +34,9 @@ enum class WMO_WeatherCode(var code: Int, var image: String) {
     OVERCAST(3, "cloudy"),
     FOG(45, "fog"),
     DEPOSITING_RIME_FOG(48, "fog"),
-    DRIZZLE_LIGHT(51, "drizzle"),
-    DRIZZLE_MODERATE(53, "drizzle"),
-    DRIZZLE_DENSE(55, "drizzle"),
+    DRIZZLE_LIGHT(51, "rain_light"),
+    DRIZZLE_MODERATE(53, "rain_light"),
+    DRIZZLE_DENSE(55, "rain_light"),
     FREEZING_DRIZZLE_LIGHT(56, "freezing_drizzle"),
     FREEZING_DRIZZLE_DENSE(57, "freezing_drizzle"),
     RAIN_SLIGHT(61, "rain_light"),
