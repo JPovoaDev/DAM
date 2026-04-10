@@ -1,19 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/sunny_bg"
     tools:context=".MainActivity">
 
+    <!-- Ícone do tempo (ex: sol) -->
+    <ImageView
+        android:id="@+id/imgWeatherIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/clear_day"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Tabela de dados -->
+
+    <!-- Latitude -->
     <TextView
+        android:id="@+id/lblLatitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Latitude"
+        android:textColor="#FFFFFF"
+        android:background="#AA6200EE"
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@id/imgWeatherIcon"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvLatitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#FFFFFF"
+        android:background="#AA000000"
+        android:padding="6dp"
+        app:layout_constraintTop_toTopOf="@id/lblLatitude"
+        app:layout_constraintStart_toEndOf="@id/lblLatitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Longitude -->
+    <TextView
+        android:id="@+id/lblLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:textColor="#FFFFFF"
+        android:background="#AA6200EE"
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@id/lblLatitude"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvLongitude"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#FFFFFF"
+        android:background="#AA000000"
+        android:padding="6dp"
+        app:layout_constraintTop_toTopOf="@id/lblLongitude"
+        app:layout_constraintStart_toEndOf="@id/lblLongitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Sea Level Pressure -->
+    <TextView
+        android:id="@+id/lblPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sea Level Pressure"
+        android:textColor="#FFFFFF"
+        android:background="#AA6200EE"
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@id/lblLongitude"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvPressure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#FFFFFF"
+        android:background="#AA000000"
+        android:padding="6dp"
+        app:layout_constraintTop_toTopOf="@id/lblPressure"
+        app:layout_constraintStart_toEndOf="@id/lblPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Wind Direction -->
+    <TextView
+        android:id="@+id/lblWindDir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind Direction"
+        android:textColor="#FFFFFF"
+        android:background="#AA6200EE"
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@id/lblPressure"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvWindDir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#FFFFFF"
+        android:background="#AA000000"
+        android:padding="6dp"
+        app:layout_constraintTop_toTopOf="@id/lblWindDir"
+        app:layout_constraintStart_toEndOf="@id/lblWindDir"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Wind Speed -->
+    <TextView
+        android:id="@+id/lblWindSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind Speed"
+        android:textColor="#FFFFFF"
+        android:background="#AA6200EE"
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@id/lblWindDir"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvWindSpeed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#FFFFFF"
+        android:background="#AA000000"
+        android:padding="6dp"
+        app:layout_constraintTop_toTopOf="@id/lblWindSpeed"
+        app:layout_constraintStart_toEndOf="@id/lblWindSpeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Temperature -->
+    <TextView
+        android:id="@+id/lblTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:textColor="#FFFFFF"
+        android:background="#AA6200EE"
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@id/lblWindSpeed"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTemp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#FFFFFF"
+        android:background="#AA000000"
+        android:padding="6dp"
+        app:layout_constraintTop_toTopOf="@id/lblTemp"
+        app:layout_constraintStart_toEndOf="@id/lblTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/lblTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textColor="#FFFFFF"
+        android:background="#AA6200EE"
+        android:padding="6dp"
+        app:layout_constraintTop_toBottomOf="@id/lblTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:textColor="#FFFFFF"
+        android:background="#AA000000"
+        android:padding="6dp"
+        app:layout_constraintTop_toTopOf="@id/lblTime"
+        app:layout_constraintStart_toEndOf="@id/lblTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Botão UPDATE -->
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/lblTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
