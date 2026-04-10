@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="imgWeatherIcon" type="id">imgWeatherIcon</item>
-    <item name="lblLatitude" type="id">lblLatitude</item>
-    <item name="tvLatitude" type="id">tvLatitude</item>
-    <item name="lblLongitude" type="id">lblLongitude</item>
-    <item name="tvLongitude" type="id">tvLongitude</item>
-    <item name="lblPressure" type="id">lblPressure</item>
-    <item name="tvPressure" type="id">tvPressure</item>
-    <item name="lblWindDir" type="id">lblWindDir</item>
-    <item name="tvWindDir" type="id">tvWindDir</item>
-    <item name="lblWindSpeed" type="id">lblWindSpeed</item>
-    <item name="tvWindSpeed" type="id">tvWindSpeed</item>
-    <item name="lblTemp" type="id">lblTemp</item>
-    <item name="tvTemp" type="id">tvTemp</item>
-    <item name="lblTime" type="id">lblTime</item>
-    <item name="tvTime" type="id">tvTime</item>
-    <item name="btnUpdate" type="id">btnUpdate</item>
+    <item name="imgWeatherIcon" type="id" />
+    <item name="lblLatitude" type="id" />
+    <item name="tvLatitude" type="id" />
+    <item name="lblLongitude" type="id" />
+    <item name="tvLongitude" type="id" />
+    <item name="lblPressure" type="id" />
+    <item name="tvPressure" type="id" />
+    <item name="lblWindDir" type="id" />
+    <item name="tvWindDir" type="id" />
+    <item name="lblWindSpeed" type="id" />
+    <item name="tvWindSpeed" type="id" />
+    <item name="lblTemp" type="id" />
+    <item name="tvTemp" type="id" />
+    <item name="lblTime" type="id" />
+    <item name="tvTime" type="id" />
+    <item name="btnUpdate" type="id" />
 </resources>

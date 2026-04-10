@@ -6,7 +6,6 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sunny_bg"
     tools:context=".MainActivity">
 
     <!-- Ícone do tempo (ex: sol) -->
@@ -27,7 +26,7 @@
         android:id="@+id/lblLatitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Latitude"
+        android:text="@string/latitude"
         android:textColor="#FFFFFF"
         android:background="#AA6200EE"
         android:padding="6dp"
@@ -36,7 +35,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"/>
 
-    <TextView
+    <EditText
         android:id="@+id/tvLatitude"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -44,6 +43,7 @@
         android:textColor="#FFFFFF"
         android:background="#AA000000"
         android:padding="6dp"
+        android:inputType="numberDecimal|numberSigned"
         app:layout_constraintTop_toTopOf="@id/lblLatitude"
         app:layout_constraintStart_toEndOf="@id/lblLatitude"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,7 @@
         android:id="@+id/lblLongitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Longitude"
+        android:text="@string/longitude"
         android:textColor="#FFFFFF"
         android:background="#AA6200EE"
         android:padding="6dp"
@@ -63,7 +63,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginStart="16dp"/>
 
-    <TextView
+    <EditText
         android:id="@+id/tvLongitude"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -71,6 +71,7 @@
         android:textColor="#FFFFFF"
         android:background="#AA000000"
         android:padding="6dp"
+        android:inputType="numberDecimal|numberSigned"
         app:layout_constraintTop_toTopOf="@id/lblLongitude"
         app:layout_constraintStart_toEndOf="@id/lblLongitude"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +82,7 @@
         android:id="@+id/lblPressure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sea Level Pressure"
+        android:text="@string/sea_level_pressure"
         android:textColor="#FFFFFF"
         android:background="#AA6200EE"
         android:padding="6dp"
@@ -108,7 +109,7 @@
         android:id="@+id/lblWindDir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wind Direction"
+        android:text="@string/wind_direction"
         android:textColor="#FFFFFF"
         android:background="#AA6200EE"
         android:padding="6dp"
@@ -135,7 +136,7 @@
         android:id="@+id/lblWindSpeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Wind Speed"
+        android:text="@string/wind_speed"
         android:textColor="#FFFFFF"
         android:background="#AA6200EE"
         android:padding="6dp"
@@ -162,7 +163,7 @@
         android:id="@+id/lblTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Temperature"
+        android:text="@string/temperature"
         android:textColor="#FFFFFF"
         android:background="#AA6200EE"
         android:padding="6dp"
@@ -189,7 +190,7 @@
         android:id="@+id/lblTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Time"
+        android:text="@string/time"
         android:textColor="#FFFFFF"
         android:background="#AA6200EE"
         android:padding="6dp"
@@ -216,7 +217,7 @@
         android:id="@+id/btnUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="UPDATE"
+        android:text="@string/update"
         android:backgroundTint="#6200EE"
         android:textColor="#FFFFFF"
         app:layout_constraintTop_toBottomOf="@id/lblTime"
