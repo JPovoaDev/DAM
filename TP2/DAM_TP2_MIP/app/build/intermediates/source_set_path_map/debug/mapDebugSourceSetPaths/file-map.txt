@@ -1,0 +1,39 @@
+com.example.dogviewer.app-glide-4.14.2-0 C:\Users\olavo\.gradle\caches\9.0.0\transforms\0149013b65b65249db654c091ed32dbf\transformed\glide-4.14.2\res
+com.example.dogviewer.app-emoji2-1.2.0-1 C:\Users\olavo\.gradle\caches\9.0.0\transforms\0b902c457dac105af087e1f538c86fc4\transformed\emoji2-1.2.0\res
+com.example.dogviewer.app-profileinstaller-1.3.0-2 C:\Users\olavo\.gradle\caches\9.0.0\transforms\1320df5be82ecb6c912b8d33e477f96d\transformed\profileinstaller-1.3.0\res
+com.example.dogviewer.app-lifecycle-viewmodel-2.7.0-3 C:\Users\olavo\.gradle\caches\9.0.0\transforms\166c773e7b256ec75677589501a27733\transformed\lifecycle-viewmodel-2.7.0\res
+com.example.dogviewer.app-recyclerview-1.1.0-4 C:\Users\olavo\.gradle\caches\9.0.0\transforms\1b3af29c9df5224c5e2cec9da00d4aa5\transformed\recyclerview-1.1.0\res
+com.example.dogviewer.app-coordinatorlayout-1.1.0-5 C:\Users\olavo\.gradle\caches\9.0.0\transforms\275783f1d34bc8828eba0475bd877b13\transformed\coordinatorlayout-1.1.0\res
+com.example.dogviewer.app-cardview-1.0.0-6 C:\Users\olavo\.gradle\caches\9.0.0\transforms\2ddaab94ad5cf9cc7fa6d0adb6e61e97\transformed\cardview-1.0.0\res
+com.example.dogviewer.app-appcompat-1.6.1-7 C:\Users\olavo\.gradle\caches\9.0.0\transforms\2fea61ffc1d2e9eb020d2a96366dfbb4\transformed\appcompat-1.6.1\res
+com.example.dogviewer.app-startup-runtime-1.1.1-8 C:\Users\olavo\.gradle\caches\9.0.0\transforms\360eca6a81561cb47b06a477259da3ce\transformed\startup-runtime-1.1.1\res
+com.example.dogviewer.app-lifecycle-viewmodel-savedstate-2.7.0-9 C:\Users\olavo\.gradle\caches\9.0.0\transforms\3678b4080c5d38766c36973e8ccf5638\transformed\lifecycle-viewmodel-savedstate-2.7.0\res
+com.example.dogviewer.app-core-ktx-1.12.0-10 C:\Users\olavo\.gradle\caches\9.0.0\transforms\4cdeedd41775db8b78c445cf076b7d26\transformed\core-ktx-1.12.0\res
+com.example.dogviewer.app-annotation-experimental-1.3.0-11 C:\Users\olavo\.gradle\caches\9.0.0\transforms\5cb1fb68c4a4a9d25ebd823b99d55d18\transformed\annotation-experimental-1.3.0\res
+com.example.dogviewer.app-swiperefreshlayout-1.1.0-12 C:\Users\olavo\.gradle\caches\9.0.0\transforms\7456aed8598b0dae4a1373e572fd95dd\transformed\swiperefreshlayout-1.1.0\res
+com.example.dogviewer.app-lifecycle-livedata-ktx-2.7.0-13 C:\Users\olavo\.gradle\caches\9.0.0\transforms\74804aee7621206dff0ca1b62e833adb\transformed\lifecycle-livedata-ktx-2.7.0\res
+com.example.dogviewer.app-lifecycle-livedata-2.7.0-14 C:\Users\olavo\.gradle\caches\9.0.0\transforms\74e62f919c6714a8d0714f64f45a0efe\transformed\lifecycle-livedata-2.7.0\res
+com.example.dogviewer.app-activity-1.8.0-15 C:\Users\olavo\.gradle\caches\9.0.0\transforms\90df4cd08b13c7aca44403edb30a52b5\transformed\activity-1.8.0\res
+com.example.dogviewer.app-lifecycle-livedata-core-2.7.0-16 C:\Users\olavo\.gradle\caches\9.0.0\transforms\950fa8198168514e62be517877c3e202\transformed\lifecycle-livedata-core-2.7.0\res
+com.example.dogviewer.app-appcompat-resources-1.6.1-17 C:\Users\olavo\.gradle\caches\9.0.0\transforms\98b62f0184a90decab3b85c7abba497b\transformed\appcompat-resources-1.6.1\res
+com.example.dogviewer.app-transition-1.2.0-18 C:\Users\olavo\.gradle\caches\9.0.0\transforms\9a5a110b741ee3b30d8a1a2dea9cd507\transformed\transition-1.2.0\res
+com.example.dogviewer.app-drawerlayout-1.1.1-19 C:\Users\olavo\.gradle\caches\9.0.0\transforms\9c5797240ca74bf7ec55c2d0a6ed5f69\transformed\drawerlayout-1.1.1\res
+com.example.dogviewer.app-lifecycle-viewmodel-ktx-2.7.0-20 C:\Users\olavo\.gradle\caches\9.0.0\transforms\a404d500eeff5442d8f89c0b1d3858cb\transformed\lifecycle-viewmodel-ktx-2.7.0\res
+com.example.dogviewer.app-core-1.12.0-21 C:\Users\olavo\.gradle\caches\9.0.0\transforms\a7c724dfe16f2dcfd56ccd993f17e4ac\transformed\core-1.12.0\res
+com.example.dogviewer.app-core-runtime-2.2.0-22 C:\Users\olavo\.gradle\caches\9.0.0\transforms\abe73df4b76d5283f6ca74fb88283ec1\transformed\core-runtime-2.2.0\res
+com.example.dogviewer.app-constraintlayout-2.1.4-23 C:\Users\olavo\.gradle\caches\9.0.0\transforms\c8464ee328c7d350fde846dc992f2c93\transformed\constraintlayout-2.1.4\res
+com.example.dogviewer.app-savedstate-1.2.1-24 C:\Users\olavo\.gradle\caches\9.0.0\transforms\ca5288116790a3d5c42ed9e6781d1226\transformed\savedstate-1.2.1\res
+com.example.dogviewer.app-emoji2-views-helper-1.2.0-25 C:\Users\olavo\.gradle\caches\9.0.0\transforms\cd43ac78c4261c9817c8e671761f2232\transformed\emoji2-views-helper-1.2.0\res
+com.example.dogviewer.app-lifecycle-process-2.7.0-26 C:\Users\olavo\.gradle\caches\9.0.0\transforms\cf5e105bd0eb7b0d72bcb82a507400f3\transformed\lifecycle-process-2.7.0\res
+com.example.dogviewer.app-material-1.10.0-27 C:\Users\olavo\.gradle\caches\9.0.0\transforms\d187130d7ed54e9b06867b6254162c64\transformed\material-1.10.0\res
+com.example.dogviewer.app-viewpager2-1.0.0-28 C:\Users\olavo\.gradle\caches\9.0.0\transforms\db2110659685a2ae4fdcb5a019746ac9\transformed\viewpager2-1.0.0\res
+com.example.dogviewer.app-fragment-1.3.6-29 C:\Users\olavo\.gradle\caches\9.0.0\transforms\e54e06813d8daf013f5b620fb85a4960\transformed\fragment-1.3.6\res
+com.example.dogviewer.app-lifecycle-livedata-core-ktx-2.7.0-30 C:\Users\olavo\.gradle\caches\9.0.0\transforms\e9e2ed680023c8da438fe8c463b3fdcf\transformed\lifecycle-livedata-core-ktx-2.7.0\res
+com.example.dogviewer.app-lifecycle-runtime-2.7.0-31 C:\Users\olavo\.gradle\caches\9.0.0\transforms\ef91f3d66db81e1eb6e72b4dff59dd84\transformed\lifecycle-runtime-2.7.0\res
+com.example.dogviewer.app-pngs-32 C:\Users\olavo\OneDrive\Ambiente de Trabalho\ISEL\S6-ISEL\DAM\TP2\DAM_TP2_MIP\app\build\generated\res\pngs\debug
+com.example.dogviewer.app-resValues-33 C:\Users\olavo\OneDrive\Ambiente de Trabalho\ISEL\S6-ISEL\DAM\TP2\DAM_TP2_MIP\app\build\generated\res\resValues\debug
+com.example.dogviewer.app-packageDebugResources-34 C:\Users\olavo\OneDrive\Ambiente de Trabalho\ISEL\S6-ISEL\DAM\TP2\DAM_TP2_MIP\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.example.dogviewer.app-packageDebugResources-35 C:\Users\olavo\OneDrive\Ambiente de Trabalho\ISEL\S6-ISEL\DAM\TP2\DAM_TP2_MIP\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.example.dogviewer.app-debug-36 C:\Users\olavo\OneDrive\Ambiente de Trabalho\ISEL\S6-ISEL\DAM\TP2\DAM_TP2_MIP\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.example.dogviewer.app-debug-37 C:\Users\olavo\OneDrive\Ambiente de Trabalho\ISEL\S6-ISEL\DAM\TP2\DAM_TP2_MIP\app\src\debug\res
+com.example.dogviewer.app-main-38 C:\Users\olavo\OneDrive\Ambiente de Trabalho\ISEL\S6-ISEL\DAM\TP2\DAM_TP2_MIP\app\src\main\res

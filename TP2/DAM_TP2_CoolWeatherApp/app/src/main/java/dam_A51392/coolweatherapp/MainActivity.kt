@@ -140,6 +140,35 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // Lê os arrays do ficheiro weather_codes.xml usando TypedArray
+    // Segue o padrão dos slides (Array Resources - untyped arrays, slide 34)
+    // O array principal referencia sub-arrays, cada um com: código, descrição, imagem, tem_dia_noite
+    private fun getWeatherCodeMap(): Map<Int, WeatherCodeInfo> {
+        val map = HashMap<Int, WeatherCodeInfo>()
+
+        val weatherCodeNames = resources.getStringArray(R.array.weather_codes)
+
+        for (name in weatherCodeNames) {
+            val subArrayId = resources.getIdentifier(name, "array", packageName)
+            if (subArrayId == 0) continue
+
+            // obtainTypedArray funciona com <array> genérico
+            val entry = resources.obtainTypedArray(subArrayId)
+            if (entry.length() < 4) { entry.recycle(); continue }
+
+            val code = entry.getString(0)?.toIntOrNull() ?: run { entry.recycle(); continue }
+            val description = entry.getString(1) ?: ""
+            val image = entry.getString(2) ?: ""
+            val hasDayNight = entry.getString(3) == "true"
+
+            map[code] = WeatherCodeInfo(code, description, image, hasDayNight)
+
+            entry.recycle()
+        }
+
+        return map
+    }
+
     // Atualiza todos os elementos visuais do interface com os dados recebidos da API
     private fun updateUI(request: WeatherData) {
         runOnUiThread {
@@ -165,8 +194,8 @@ class MainActivity : AppCompatActivity() {
             // Determina se é dia ou noite com base na hora atual, nascer e pôr do sol
             day = isDay(
                 request.current_weather.time,
-                request.daily.sunrise[0].substring(11), // extrai hora do nascer do sol
-                request.daily.sunset[0].substring(11)   // extrai hora do pôr do sol
+                request.daily.sunrise[0].substring(11), // extrai hora do nascer do sol (HH:mm)
+                request.daily.sunset[0].substring(11)   // extrai hora do pôr do sol (HH:mm)
             )
 
             // Muda o fundo da aplicação consoante dia/noite e orientação do ecrã
@@ -177,28 +206,32 @@ class MainActivity : AppCompatActivity() {
                 else     { if (isLandscape) R.drawable.night_bg_land else R.drawable.night_bg }
             )
 
-            // Determina o ícone meteorológico a mostrar com base no código WMO
-            val wCode = getWeatherCodeMap()[request.current_weather.weathercode]
-            val wImage = if (wCode != null) {
-                when (wCode) {
-                    // Para céu limpo, maioritariamente limpo e parcialmente nublado,
-                    // usa versão "day" ou "night" do ícone
-                    WMO_WeatherCode.CLEAR_SKY,
-                    WMO_WeatherCode.MAINLY_CLEAR,
-                    WMO_WeatherCode.PARTLY_CLOUDY -> wCode.image + if (day) "day" else "night"
-                    // Para os restantes códigos, o ícone é o mesmo para dia e noite
-                    else -> wCode.image
+            // Lê o mapa de códigos WMO a partir do ficheiro XML de recursos
+            val wCodeInfo = getWeatherCodeMap()[request.current_weather.weathercode]
+
+            // Determina o nome do drawable a usar:
+            // — se o ícone tem versão dia/noite, adiciona "day" ou "night" ao nome base
+            // — caso contrário, usa o nome base diretamente
+            val wImage = if (wCodeInfo != null) {
+                if (wCodeInfo.hasDayNight) {
+                    wCodeInfo.image + if (day) "day" else "night"
+                } else {
+                    wCodeInfo.image
                 }
             } else {
-                // Código desconhecido — usa ícone de céu limpo como alternativa
+                // Código WMO desconhecido — usa ícone de céu limpo como alternativa
                 if (day) "clear_day" else "clear_night"
             }
 
-            // Carrega o drawable correspondente ao nome do ícone e aplica-o à ImageView
+            // Carrega o drawable pelo nome e aplica-o à ImageView
+            // Se não encontrar o drawable (resID == 0), usa o ícone padrão
             val resID = resources.getIdentifier(wImage, "drawable", packageName)
             val weatherImage = findViewById<ImageView>(R.id.imgWeatherIcon)
-            // Se o drawable existir usa-o, caso contrário usa o ícone padrão
-            weatherImage.setImageResource(if (resID != 0) resID else if (day) R.drawable.clear_day else R.drawable.clear_night)
+            weatherImage.setImageResource(
+                if (resID != 0) resID
+                else if (day) R.drawable.clear_day
+                else R.drawable.clear_night
+            )
         }
     }
 }
