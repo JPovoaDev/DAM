@@ -1,8 +1,10 @@
-# Trabalho 2 — Desenvolvimento de Aplicações Móveis (Kotlin)
-Course: Desenvolvimento de Aplicações Móveis
-Student(s): [NOME]
-Date: [DATA]
-Repository URL: [URL]
+# Trabalho 2 — Desenvolvimento de Aplicações Móveis 
+
+Course: Desenvolvimento de Aplicações Móveis(DAM)
+
+Student(s): João Pedro Mulano Póvoa
+Date: 12/04/2024
+Repository URL: https://github.com/JPovoaDev/DAM/edit/main/TP2/DAM_TP2_MIP/README.md
 
 ## 1. Introduction
 Este projeto consiste no desenvolvimento de uma aplicação Android nativa, em Kotlin, que permite visualizar imagens aleatórias de cães utilizando a "Dog API". O trabalho aborda temas fundamentais do desenvolvimento moderno em Android, nomeadamente a arquitetura MVVM (Model-View-ViewModel), o consumo de APIs REST com Retrofit, a gestão de estado com LiveData, e a implementação de mecanismos de cache local e sistemas de favoritos com lógica FIFO (First-In, First-Out).
