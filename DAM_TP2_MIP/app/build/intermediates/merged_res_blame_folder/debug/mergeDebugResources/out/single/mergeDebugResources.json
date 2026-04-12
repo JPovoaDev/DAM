@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-debug-36:\\layout_activity_image_details.xml.flat",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\layout\\activity_image_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-debug-36:\\drawable_bg_header_gradient.xml.flat",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\drawable\\bg_header_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-debug-36:\\drawable_ic_refresh.xml.flat",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\drawable\\ic_refresh.xml"
+    },
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-debug-36:\\layout_item_dog_image.xml.flat",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\layout\\item_dog_image.xml"
+    },
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-debug-36:\\drawable_ic_favorite.xml.flat",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\drawable\\ic_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-debug-36:\\layout_activity_favorites.xml.flat",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\layout\\activity_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-debug-36:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-debug-36:\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "com.example.dogviewer.app-debug-36:/layout_activity_image_details.xml.flat",
+        "source": "com.example.dogviewer.app-main-38:/layout/activity_image_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-debug-36:\\drawable_shape_header_bottom_rounded.xml.flat",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\drawable\\shape_header_bottom_rounded.xml"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-mergeDebugResources-35:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-mergeDebugResources-35:\\layout\\item_dog_image.xml",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\layout\\item_dog_image.xml"
+    },
+    {
+        "merged": "com.example.dogviewer.app-mergeDebugResources-35:/layout/activity_image_details.xml",
+        "source": "com.example.dogviewer.app-main-38:/layout/activity_image_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-mergeDebugResources-35:\\layout\\activity_favorites.xml",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\layout\\activity_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-mergeDebugResources-35:\\layout\\activity_image_details.xml",
+        "source": "C:\\Users\\olavo\\.gradle\\daemon\\9.0.0\\com.example.dogviewer.app-main-38:\\layout\\activity_image_details.xml"
+    }
+]

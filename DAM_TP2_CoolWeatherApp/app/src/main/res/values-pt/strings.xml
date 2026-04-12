@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">APP do Clima</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="sea_level_pressure">Pressão ao Nível do Mar</string>
+    <string name="wind_direction">Direção do Vento</string>
+    <string name="wind_speed">Velocidade do Vento</string>
+    <string name="temperature">Temperatura</string>
+    <string name="time">Hora</string>
+    <string name="update">ATUALIZAR</string>
+</resources>
