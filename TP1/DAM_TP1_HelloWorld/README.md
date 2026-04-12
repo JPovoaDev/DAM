@@ -1,8 +1,12 @@
 # Assignment 1 — Hello World and Simple To-Do App
+
 Course: Desenvolvimento de Aplicações Móveis
-Student(s): João Pedro Mulano Povoa
+
+Student(s): João Pedro Mulano Póvoa
+
 Date: 07/03/2026
-Repository URL: https://github.com/JPovoaDev/DAM_TP1_Ex4_Ex7
+
+Repository URL: https://github.com/JPovoaDev/DAM/tree/main/TP1/DAM_TP1_HelloWorld
 
 ## 1. Introduction
 Este projeto foi desenvolvido como parte de um exercício prático de introdução ao sistema operativo Android. O principal objetivo foi familiarizar-me com a estrutura de um projeto Android no Android Studio, explorando o sistema de layouts, views (como `TextView`, `ImageView` e `CalendarView`), ficheiros de recursos (`strings.xml`, `colors.xml`) e a criação interativa de elementos de UI tanto em **modo portrait** (vertical) quanto em **modo landscape** (horizontal). O projeto está dividido em duas partes distintas: a construção e evolução de um ecrã "Hello World" com múltiplos atributos estilizados e um simples gestor de tarefas ("To-Do List") exclusivo para a vista em formato horizontal.
