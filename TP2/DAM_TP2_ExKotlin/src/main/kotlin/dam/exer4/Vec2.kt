@@ -18,6 +18,7 @@ data class Vec2(val x:Double,val y:Double):Comparable<Vec2>{
     operator fun unaryMinus():Vec2{
         return Vec2(-x,-y)
     }
+
     fun magnitude():Double{
         return sqrt(x * x + y * y)
     }

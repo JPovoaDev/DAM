@@ -36,12 +36,13 @@ var pipelinelist = mutableMapOf<String, (List<String>)->List<String>>()
 
 
 }
-fun buildPipeline(pipeline: (Pipeline)->Unit):Pipeline{
+fun buildPipeline(build: Pipeline.()->Unit):Pipeline{
     // criamos um pipeline
-    val pipeline1 = Pipeline()
+    val pipeline = Pipeline()
     // e aplicamos a fncao lambda ao pipeline criado
-    pipeline(pipeline1)
-    return pipeline1
+    pipeline.build()
+    return pipeline
+
 }
 
 fun main() {
@@ -55,15 +56,16 @@ fun main() {
         " ERROR: connection timeout "
     )
 // constroimos o pipeline com os stages
-    val pipeline = buildPipeline {pipe->
+    val pipeline = buildPipeline {
         // o trim  remove os espacos em branco
-        pipe.addStage("Trim") { list -> list.map { it.trim() } }
+        addStage("Trim") { list -> list.map { it.trim() } }
         //apenas o que contem  a palavra error
-        pipe.addStage("Filter errors") { list -> list.filter { it.contains("ERROR") } }
+        addStage("Filter errors") { list -> list.filter { it.contains("ERROR") } }
         //mete tudo em maiusculas
-        pipe.addStage("Uppercase") { list -> list.map { it.uppercase() } }
+        addStage("Uppercase") { list -> list.map { it.uppercase() } }
         //adiciona o index
-        pipe.addStage("Add index") { list -> list.mapIndexed { index, line -> "${index + 1}. $line" } }
+        addStage("Add index") { list -> list.mapIndexed { index, line -> "${index + 1}. $line" } }
+
     }
 
     println("Pipeline stages:")
