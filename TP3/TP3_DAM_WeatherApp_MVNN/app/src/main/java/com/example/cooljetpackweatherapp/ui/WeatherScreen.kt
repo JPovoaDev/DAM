@@ -28,13 +28,16 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.example.cooljetpackweatherapp.data.FavoriteLocation
 import com.example.cooljetpackweatherapp.data.WMO_WeatherCode
 import com.example.cooljetpackweatherapp.viewport.WeatherViewModel
 
 @RequiresApi(Build.VERSION_CODES.O)
 @Composable
 fun WeatherUI(
-    weatherViewModel: WeatherViewModel = viewModel()
+    weatherViewModel: WeatherViewModel = viewModel(),
+    onLocationPickerClick: () -> Unit
+
 )
 {
     val weatherUIState by weatherViewModel.uiState.collectAsState()
@@ -46,6 +49,8 @@ fun WeatherUI(
     val weathercode = weatherUIState.weathercode
     val seaLevelPressure = weatherUIState.seaLevelPressure
     val time = weatherUIState.time
+    val locationName = weatherViewModel.locationName
+
 
     val configuration = LocalConfiguration.current
     val day = weatherUIState.isDay
@@ -74,9 +79,17 @@ fun WeatherUI(
             weathercode,
             seaLevelPressure,
             time,
+            favoriteLocations = weatherViewModel.favoriteLocations,
+            onLocationClick = { weatherViewModel.selectFavoriteLocation(it) },
+            locationName = locationName,
             onLatitudeChange = {weatherViewModel.updateLatitude(it)},
             onLongitudeChange = { weatherViewModel.updateLongitude(it)},
-            onUpdateButtonClick = { weatherViewModel.fetchWeather()}
+            onUpdateButtonClick = { weatherViewModel.fetchWeather()},
+            onLocationNameChange = { weatherViewModel.updateLocationName(it) },
+            onSaveLocation = { weatherViewModel.addFavoriteLocation() },
+            onLocationPickerClick = onLocationPickerClick,
+
+
         )
     } else {
         PortraitWeatherUI(
@@ -91,7 +104,15 @@ fun WeatherUI(
             time,
             onLatitudeChange = {weatherViewModel.updateLatitude(it)},
             onLongitudeChange = {weatherViewModel.updateLongitude(it)},
-            onUpdateButtonClick = {weatherViewModel.fetchWeather()}
+            onUpdateButtonClick = {weatherViewModel.fetchWeather()},
+            onLocationNameChange = { weatherViewModel.updateLocationName(it) },
+            onSaveLocation = { weatherViewModel.addFavoriteLocation() },
+            onLocationPickerClick = onLocationPickerClick,
+            favoriteLocations = weatherViewModel.favoriteLocations,
+            onLocationClick = { weatherViewModel.selectFavoriteLocation(it) },
+            locationName = locationName,
+
+
         )
     }
 }
@@ -107,10 +128,17 @@ fun PortraitWeatherUI(
     weathercode: Int,
     seaLevelPressure: Float,
     time: String,
+    locationName: String,
+    favoriteLocations: List<FavoriteLocation>,
     onLatitudeChange: (String) -> Unit,
     onLongitudeChange: (String) -> Unit,
     onUpdateButtonClick: () -> Unit,
-) {
+    onLocationPickerClick: () -> Unit,
+    onLocationNameChange: (String) -> Unit,
+    onSaveLocation: () -> Unit,
+    onLocationClick: (FavoriteLocation) -> Unit,
+
+    ) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -133,8 +161,12 @@ fun PortraitWeatherUI(
         CoordinatesCard(
             latitude = latitude,
             longitude = longitude,
+            locationName = locationName,
             onLatitudeChange = onLatitudeChange,
-            onLongitudeChange = onLongitudeChange
+            onLongitudeChange = onLongitudeChange,
+            onLocationNameChange = onLocationNameChange,
+            onSaveLocation = onSaveLocation,
+            onLocationPickerClick = onLocationPickerClick
         )
 
         WeatherCard(
@@ -145,6 +177,12 @@ fun PortraitWeatherUI(
             time = time
         )
 
+        Spacer(modifier = Modifier.height(8.dp))
+
+        FavoriteLocationsRow(
+            favoriteLocations = favoriteLocations,
+            onLocationClick = onLocationClick
+        )
         Spacer(modifier = Modifier.height(8.dp))
 
         Button(
@@ -172,9 +210,15 @@ fun LandscapeWeatherUI(
     weathercode: Int,
     seaLevelPressure: Float,
     time: String,
+    locationName: String,
+    favoriteLocations: List<FavoriteLocation>,
     onLatitudeChange: (String) -> Unit,
     onLongitudeChange: (String) -> Unit,
     onUpdateButtonClick: () -> Unit,
+    onLocationPickerClick: () -> Unit,
+    onLocationNameChange: (String) -> Unit,
+    onSaveLocation: () -> Unit,
+    onLocationClick: (FavoriteLocation) -> Unit,
 ) {
     Column(
         modifier = Modifier
@@ -204,8 +248,12 @@ fun LandscapeWeatherUI(
                 CoordinatesCard(
                     latitude = latitude,
                     longitude = longitude,
+                    locationName = locationName,
                     onLatitudeChange = onLatitudeChange,
-                    onLongitudeChange = onLongitudeChange
+                    onLongitudeChange = onLongitudeChange,
+                    onLocationNameChange = onLocationNameChange,
+                    onSaveLocation = onSaveLocation,
+                    onLocationPickerClick = onLocationPickerClick
                 )
             }
 
@@ -220,6 +268,11 @@ fun LandscapeWeatherUI(
             }
         }
 
+        Spacer(modifier = Modifier.height(8.dp))
+        FavoriteLocationsRow(
+            favoriteLocations = favoriteLocations,
+            onLocationClick = onLocationClick
+        )
         Spacer(modifier = Modifier.height(8.dp))
 
         Button(
