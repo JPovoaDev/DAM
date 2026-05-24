@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/note_details_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_primary"
+    android:padding="16dp"
+    tools:context=".NoteDetailsActivity">
+
+    <!-- ScrollView for forms to support small screens & keyboards -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title Bar Layout -->
+            <RelativeLayout
+                android:id="@+id/title_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/page_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_new_note"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/save_note_btn"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/save_note"
+                    android:src="@drawable/ic_baseline_done_24"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+            <!-- Main Edit Note Card -->
+            <LinearLayout
+                android:id="@+id/note_edit_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/white"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <!-- Image container with remove button -->
+                <FrameLayout
+                    android:id="@+id/image_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/note_detail_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/RoundedCornersImageView" />
+
+                    <ImageButton
+                        android:id="@+id/remove_image_btn"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="8dp"
+                        android:background="@android:color/black"
+                        android:backgroundTint="#88000000"
+                        android:contentDescription="@string/delete_note"
+                        android:src="@drawable/ic_baseline_close_24"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/notes_title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="Notes Title"
+                    android:hint="@string/title"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/black"
+                    android:textColorHint="#888888"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="6dp"
+                    android:background="#DDDDDD" />
+
+                <EditText
+                    android:id="@+id/notes_content_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:hint="@string/content"
+                    android:inputType="textMultiLine"
+                    android:minLines="10"
+                    android:background="@android:color/transparent"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#888888"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!-- Categoria Tag Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Categoria (#Tag)"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:scrollbars="none">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/tag_chip_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:singleLine="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_trabalho"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Trabalho" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_pessoal"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pessoal" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_ideias"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ideias" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_lembrete"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lembrete" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_outros"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Outros" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </HorizontalScrollView>
+
+            <!-- Cores de Fundo Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Cor de Fundo"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:scrollbars="none">
+
+                <!-- Color selector container filled dynamically in Kotlin -->
+                <LinearLayout
+                    android:id="@+id/color_selector_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingVertical="4dp" />
+
+            </HorizontalScrollView>
+
+            <!-- Bottom Media Buttons Layout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/gallery_btn"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="Galeria"
+                    android:textColor="@color/white"
+                    app:icon="@drawable/ic_baseline_image_24"
+                    app:iconTint="@color/white" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/camera_btn"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Câmara"
+                    android:textColor="@color/white"
+                    app:icon="@drawable/ic_baseline_photo_camera_24"
+                    app:iconTint="@color/white" />
+
+            </LinearLayout>
+
+            <!-- Delete Note Button -->
+            <TextView
+                android:id="@+id/delete_note_text_view_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="@string/delete_note"
+                android:textColor="#FFFF4444"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

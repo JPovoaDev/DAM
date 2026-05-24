@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My AI Recipe</string>
+    <string name="action_go">Send</string>
+    <string name="baking_title">Baking with Gemini</string>
+    <string name="label_prompt">Ask Gemini</string>
+    <string name="prompt_placeholder">Type your prompt here...</string>
+    <string name="image1_description">Cupcake</string>
+    <string name="image2_description">Cookies</string>
+    <string name="image3_description">Cake</string>
+    <string name="results_placeholder">Your culinary answers will appear here...</string>
+    
+    <string name="suggestion_recipe">Give me the recipe</string>
+    <string name="suggestion_name">Suggest a name for this</string>
+    <string name="suggestion_ingredients">What ingredients do I need?</string>
+</resources>

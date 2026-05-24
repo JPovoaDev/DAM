@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme Colors -->
+    <color name="primaryLight">#8B5000</color>
+    <color name="onPrimaryLight">#FFFFFF</color>
+    <color name="primaryContainerLight">#FFDCBE</color>
+    <color name="onPrimaryContainerLight">#2C1600</color>
+    <color name="secondaryLight">#735A42</color>
+    <color name="onSecondaryLight">#FFFFFF</color>
+    <color name="secondaryContainerLight">#FFDCBE</color>
+    <color name="onSecondaryContainerLight">#2A1806</color>
+    <color name="tertiaryLight">#58633A</color>
+    <color name="onTertiaryLight">#FFFFFF</color>
+    <color name="tertiaryContainerLight">#DBE8B4</color>
+    <color name="onTertiaryContainerLight">#161E01</color>
+    <color name="errorLight">#BA1A1A</color>
+    <color name="onErrorLight">#FFFFFF</color>
+    <color name="errorContainerLight">#FFDAD6</color>
+    <color name="onErrorContainerLight">#410002</color>
+    <color name="backgroundLight">#FFFBFF</color>
+    <color name="onBackgroundLight">#201A15</color>
+    <color name="surfaceLight">#FFFBFF</color>
+    <color name="onSurfaceLight">#201A15</color>
+    <color name="surfaceVariantLight">#F2DFD1</color>
+    <color name="onSurfaceVariantLight">#50453A</color>
+    <color name="outlineLight">#837468</color>
+    <color name="outlineVariantLight">#D5C3B5</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="primaryDark">#FFB870</color>
+    <color name="onPrimaryDark">#4A2800</color>
+    <color name="primaryContainerDark">#693C00</color>
+    <color name="onPrimaryContainerDark">#FFDCBE</color>
+    <color name="secondaryDark">#E2C0A2</color>
+    <color name="onSecondaryDark">#412C18</color>
+    <color name="secondaryContainerDark">#59422C</color>
+    <color name="onSecondaryContainerDark">#FFDCBE</color>
+    <color name="tertiaryDark">#BFCB9A</color>
+    <color name="onTertiaryDark">#2A3410</color>
+    <color name="tertiaryContainerDark">#414B24</color>
+    <color name="onTertiaryContainerDark">#DBE8B4</color>
+    <color name="errorDark">#FFB4AB</color>
+    <color name="onErrorDark">#690005</color>
+    <color name="errorContainerDark">#93000A</color>
+    <color name="onErrorContainerDark">#FFDAD6</color>
+    <color name="backgroundDark">#201A15</color>
+    <color name="onBackgroundDark">#EAE1D9</color>
+    <color name="surfaceDark">#201A15</color>
+    <color name="onSurfaceDark">#EAE1D9</color>
+    <color name="surfaceVariantDark">#50453A</color>
+    <color name="onSurfaceVariantDark">#D5C3B5</color>
+    <color name="outlineDark">#9E8E81</color>
+    <color name="outlineVariantDark">#50453A</color>
+</resources>
