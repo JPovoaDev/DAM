@@ -1,9 +1,12 @@
 # CoolWeatherApp
 
-**Course:** Desenvolvimento de Aplicações Móveis (DAM)  
+**Course:** Desenvolvimento de Aplicações Móveis (DAM) 
+
 **Student(s):** João Pedro Mulano Póvoa
+
 **Date:** 11 de Abril de 2026  
-**Repository URL:** [https://github.com/JPovoaDev/DAM](https://github.com/JPovoaDev/DAM)
+
+**Repository URL:** https://github.com/JPovoaDev/DAM/tree/main/TP2/DAM_TP2_CoolWeatherApp
 
 ---
 
